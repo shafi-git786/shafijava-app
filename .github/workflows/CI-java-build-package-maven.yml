@@ -9,7 +9,17 @@
 name: Java CI build and package using maven
 
 on:
-  workflow_call:
+  push:
+    branches: [ main ]
+    #paths: .github/workflows/
+  pull_request:
+    branches:  none # [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+# on:
+#   workflow_call:
 jobs:
   build:
 
