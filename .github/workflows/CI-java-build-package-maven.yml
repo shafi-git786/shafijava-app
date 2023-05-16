@@ -63,9 +63,9 @@ jobs:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_REPOSITORY_PASSWORD }}
     
-    - name: docker build image and push docker registry
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        push: true
-        tags: shafidocker/java-app:${{ github.run_number }}
+#     - name: docker build image and push docker registry
+#       uses: docker/build-push-action@v4
+#       with:
+#         context: .
+#         push: true
+#         tags: shafidocker/java-app:${{ github.run_number }}
