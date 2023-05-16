@@ -25,6 +25,21 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_REPOSITORY_PASSWORD }}
+       
+      #        # Set the target AKS cluster.
+#     - uses: Azure/aks-set-context@v1
+#       with:
+#         creds: ${{ secrets.AZURE_CREDENTIALS }}
+#         cluster-name: ${{ env.CLUSTER_NAME }}
+#         resource-group: ${{ env.RESOURSE_GROUP }}
+        
+        
+#     - uses: Azure/k8s-deploy@v1
+#       with:
+#         namespace: dev
+#         manifests: |
+#           cd-deploy-dev.yaml          
+       
           
           
           
